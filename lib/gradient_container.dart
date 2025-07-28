@@ -25,9 +25,17 @@ class GradientContainer extends StatelessWidget {
           end: endAlignment,
         ),
       ),
-      child:  Center(
-        child: Image.asset('assets/Images/picture1.jpg',width: 200),
-
+      child:  Column(
+        children: [
+          Center(
+            child: Image.asset('assets/Images/picture1.jpg',width: 200),
+          
+          ),
+          ElevatedButton(
+              onPressed: (){},
+              child: Text("Roll the dice "))
+          
+        ],
       ),
     );
   }
