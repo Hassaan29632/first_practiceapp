@@ -4,6 +4,12 @@ import 'package:flutter/material.dart';
 var startAlignment= Alignment.topLeft ;
 var endAlignment = Alignment.bottomRight ;
 
+
+void rolldice(){
+
+}
+
+
 class GradientContainer extends StatelessWidget {
 
   const GradientContainer(this.color1, this.color2 ,{super.key});
@@ -25,17 +31,25 @@ class GradientContainer extends StatelessWidget {
           end: endAlignment,
         ),
       ),
-      child:  Column(
-        children: [
-          Center(
-            child: Image.asset('assets/Images/picture1.jpg',width: 200),
-          
-          ),
-          ElevatedButton(
-              onPressed: (){},
-              child: Text("Roll the dice "))
-          
-        ],
+      child:  Center(
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+          Image.asset('assets/Images/picture1.jpg',width: 200),
+          SizedBox(height: 20,),
+
+          TextButton(onPressed: rolldice,
+              style: TextButton.styleFrom(
+                foregroundColor: Colors.white,
+                backgroundColor: Colors.black45,
+                textStyle: TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                )
+              ),
+              child: Text("Press Here"))
+        ],) 
+
       ),
     );
   }
