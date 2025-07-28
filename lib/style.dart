@@ -1,14 +1,13 @@
 import 'package:flutter/material.dart';
 
-class style extends StatelessWidget{
+class style extends StatelessWidget {
   const style(this.text, {super.key});
 
-   final String text;
+  final String text;
 
   @override
   Widget build(context) {
-
-    return Text (
+    return Text(
       text,
       style: TextStyle(
         color: Colors.yellow,
@@ -17,5 +16,4 @@ class style extends StatelessWidget{
       ),
     );
   }
-
 }

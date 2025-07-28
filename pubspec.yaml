@@ -62,6 +62,12 @@ flutter:
   assets:
    - assets/Images/picture1.jpg
    - assets/Images/picture2.jpg
+   - assets/Images/dice-1.png
+   - assets/Images/dice-2.png
+   - assets/Images/dice-3.png
+   - assets/Images/dice-4.png
+   - assets/Images/dice-5.png
+   - assets/Images/dice-6.png
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
