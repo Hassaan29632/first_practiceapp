@@ -27,7 +27,7 @@ class _DiceRollerState extends State<DiceRoller> {
       children: [
         Image.asset(image, width: 200),
         SizedBox(height: 20),
-        TextButton(
+        ElevatedButton(
           onPressed: rolldice,
           style: TextButton.styleFrom(
             foregroundColor: Colors.white,
